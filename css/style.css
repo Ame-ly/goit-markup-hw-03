@@ -239,6 +239,11 @@ height: 51.64px; */
   color: var(--white);
 }
 
+.p-title {
+  color: var(--title-text-color);
+}
+
+
 .section-tittle {
   /* margin-bottom: 50px; */
 
@@ -251,7 +256,7 @@ height: 51.64px; */
   color: var(--title-text-color);
 }
 
-.p-title {
+.menu-benefits > .p-title {
   margin-bottom: 10px;
 
   font-family: "Roboto", sans-serif;
@@ -299,9 +304,6 @@ height: 51.64px; */
   display: inline-flex;
 }
 
-.menu-benefits {
-  display: flex;
-}
 
 .site-nave .menu-item:not(:last-child),
 .contacts-top .menu-item:not(:last-child) {
@@ -547,3 +549,65 @@ letter-spacing: 0.03em;
   padding-top: 94px;
   padding-bottom: 94px;
 } */
+
+/* overlay */
+
+/* .overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid black; */
+  background-color: rgba(47, 48, 58, 0.4);
+  background-image: radial-gradient(rgba(47, 48, 58, 0.4);rgba(47, 48, 58, 0.4);) 
+    url("../images/img-hero.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+/*  
+.icon-antenna::before,
+.icon-clock::before,
+.icon-diagram::before,
+.icon-astronaut */
+
+.hero-overlay {
+  max-width: 1600px;
+  max-height: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url('../images/img-hero.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
+.icon::before {
+  display: block;
+  content:'';
+  height: 120px;
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--for-team);
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  border: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background: url(../images/astronaut.svg);
+}
