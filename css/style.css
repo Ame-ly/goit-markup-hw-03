@@ -364,9 +364,11 @@ height: 51.64px; */
 
 .about,
 .benefits,
-/* .team, */
+.team,
 .section-portfolio {
   padding-top: 94px;
+}
+.section-portfolio {
   padding-bottom: 94px;
 }
 
